@@ -1,39 +1,71 @@
-button {
-  width: 150px;
-  height: 50px;
-  font-size: 20px;
+body {
+  font-family: helvetica;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+body h3 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.btn {
+  padding: 15px 40px;
+  background: rgb(174, 0, 0);
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
 }
 
 .curtain {
-  background-color: #000;
-  opacity: .7;
-  position: absolute;
-  left: 0;
-  right: 0;
+  position: fixed;
   top: 0;
-  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+
+  z-index: 99999999;
+
+  background-color:rgba(0,0,0,.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  border-radius: 10px;
-  height: 200px;
-  width: 200px;
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+
+  font-family:Arial,sans-serif;
+  font-size:12px;
+
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
+
+  border-radius: 20px;
+
+  background-color:white;
 }
 
-.modal h3 {
-  margin: 20px auto;
-  width: 80%;
-  text-align: center;
-}
+.modal > h1{
+  padding:8px;
+  margin:-10px -10px 0;
 
-.modal button {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  font-family:verdana,sans-serif;
+  font-size:18px;
+  color:white;
+
+  border-radius: 					20px 20px 0 0;
+
+  text-shadow:2px 2px 0 rgba(0,0,0,.3);
+
+  background-color:#c00;
 }
